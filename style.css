@@ -1,3 +1,90 @@
+:root{
+    --bg-primary: #a6c6e7;
+    --bg-secondary:#64748b;
+    --primary-color:#1e293b;
+    --secondary-color:#6b7280;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    width: 100%;
+    
+}
 h1 {
-    text-align: center;
+    color:var(--primary-color);
+    padding-bottom: 1rem;
+}
+
+label{
+    font-size: 1.4rem;
+    color:var(--secondary-color);
+}
+
+input {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+}
+
+button{
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    background-color: var(--bg-secondary);
+    color: #fff;
+}
+
+.inputs{
+   
+    width: 50%;
+    background-color:var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height: 100vh;
+    
+}
+
+#output{
+    width: 50%;
+    background-color: var(--bg-secondary);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0 3rem;
+    color: #fff;
+}
+
+@media screen and (max-width:800px) {
+    
+    body{
+        flex-direction: column;
+    }
+    .inputs{
+        width: 100%;
+    }
+    #output{
+        width: 100%;
+    }
+    button{
+        margin-bottom: 1rem;
+    }
 }
